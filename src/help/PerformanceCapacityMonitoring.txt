@@ -1,0 +1,10 @@
+Performance Capacity Monitoring (PCM):
+---------------------------------------
+
+        1.ManagedSytem PCM Preferences -  This option provide an option for the user to get and set the PCM Preferences of a particular ManagedSystem.
+       
+        2.LongTermMonitor Metrics -  This option provides the metrics that are collected for a resource for a longer term monitoring perspective.
+
+        3. ShortTermMonitor Metrics - This option provides very detailed metrics on the performance of PowerVM resources primarily useful for troubleshooting purposes.
+
+        4. Processed Metrics - Processed Metrics works on the Long term monitor metrics, performs a series of computations on the available LTM data to come up with the processed data

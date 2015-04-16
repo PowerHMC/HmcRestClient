@@ -1,0 +1,46 @@
+<JobRequest:JobRequest xmlns:JobRequest="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/" xmlns="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/" 
+xmlns:ns2="http://www.w3.org/XML/1998/namespace/k2" schemaVersion="V1_1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<RequestedOperation kb="CUR" kxe="false" schemaVersion="V1_1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<OperationName kb="ROR" kxe="false">CreateLogicalUnit</OperationName>
+<GroupName kb="ROR" kxe="false">Cluster</GroupName>
+</RequestedOperation>
+<JobParameters kb="CUR" kxe="false" schemaVersion="V1_1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<JobParameter schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<ParameterName kb="ROR" kxe="false">LUName</ParameterName>
+<ParameterValue kxe="false" kb="CUR">%s</ParameterValue>
+</JobParameter>
+<JobParameter schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<ParameterName kb="ROR" kxe="false">LUSize</ParameterName>
+<ParameterValue kxe="false" kb="CUR">%s</ParameterValue>
+</JobParameter>
+<JobParameter schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<ParameterName kb="ROR" kxe="false">LUType</ParameterName>
+<ParameterValue kxe="false" kb="CUR">%s</ParameterValue>
+</JobParameter>
+<JobParameter schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<ParameterName kb="ROR" kxe="false">DeviceType</ParameterName>
+<ParameterValue kxe="false" kb="CUR">VirtualIO_Disk</ParameterValue>
+</JobParameter>
+</JobParameters>
+</JobRequest:JobRequest>

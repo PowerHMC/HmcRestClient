@@ -1,0 +1,23 @@
+VolumeGroup:
+-------------
+	VolumeGroup Menu:
+
+	1.List - List the Details of volume group such as Physical volumes and Logical volumes
+
+	2.Modify - shows following options,
+		
+		1. Add PhysicalVolume to VolumeGroup - adds a physical volume to the selected volume group(name of the disk hardcoded)  
+		2.Create VirtualDisk in VolumeGroup - creates a Virtual Disk of size 1GB is Created(capacity and name hardcoded)
+
+	3.Create - Create a Volume group with one physical volume(name of the disk hardcoded)
+
+	4.Return to vios Menu - returns to VirtualIOServer menu
+
+	5.Return to ManagedSystem Menu - returns to ManagedSystem
+
+	6.Return to MainMenu - returns to MainMenu
+
+	7.Help - Shows Help content of VolumeGroup
+
+	8.Exit - completely exits from the Program
+	

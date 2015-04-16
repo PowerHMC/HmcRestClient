@@ -1,0 +1,35 @@
+<JobRequest 
+xmlns="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/" 
+xmlns:ns2="http://www.w3.org/XML/1998/namespace/k2"
+schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<RequestedOperation kxe="false" kb="CUR" schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<OperationName kxe="false" kb="ROR">LULinkedClone</OperationName>
+<GroupName kxe="false" kb="ROR">Cluster</GroupName>
+<ProgressType kxe="false" kb="ROR">DISCRETE</ProgressType>
+</RequestedOperation>
+<JobParameters kb="CUR" kxe="false" schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<JobParameter schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<ParameterName kb="ROR" kxe="false">SourceUDID</ParameterName>
+<ParameterValue kxe="false" kb="CUR">%s</ParameterValue>
+</JobParameter>
+<JobParameter schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<ParameterName kb="ROR" kxe="false">DestinationUDID</ParameterName>
+<ParameterValue kxe="false" kb="CUR">%s</ParameterValue>
+</JobParameter>
+</JobParameters>
+</JobRequest>

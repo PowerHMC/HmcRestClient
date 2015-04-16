@@ -1,0 +1,3 @@
+[console_scripts]
+HmcRestClient = src.main.Main:main
+

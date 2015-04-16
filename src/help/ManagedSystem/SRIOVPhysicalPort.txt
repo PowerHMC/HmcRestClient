@@ -1,0 +1,15 @@
+SRIOV Physical Port
+--------------------
+	SRIOV PhysicalPort Menu:
+
+	1.List - List the details of all available SRIOV physical Ethernet Port
+
+	2.ChangeAdapterMode - Changes the adapter Mode from Dedicated to shared or shared to Dedicated Mode 
+
+	3.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+	
+	4.Return to Main Menu - Returns to Main Menu
+
+	5.Help - Shows SRIOVPhysicalPort Help Content
+
+	6.Exit - Completely exits from the Program

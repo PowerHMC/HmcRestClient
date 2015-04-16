@@ -1,0 +1,17 @@
+VirtualNetwork:
+---------------
+	Virtual Network Menu:
+
+	1.List - List the details of all available Virtual Network for the Selected Managed System
+		
+	2.Create - Creates a Virtual network on the selected Virtual Switch.[VLAN ID is hardcoded]
+
+	3.Modify - Modify name of the selected Virtual Network
+
+	4.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+
+	5.Return to Main Menu - Returns to Main Menu
+
+	6.Help - Shows Virtual Network Help Content
+
+	7.Exit - Completely exits from the Program

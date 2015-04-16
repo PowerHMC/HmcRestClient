@@ -1,0 +1,25 @@
+LogicalPartition operations:
+----------------------------
+	LogicalPartition operations Menu:
+
+	1.List - List the details of the selected LogicalPartition such as Partition memory attributes,has Shared/Dedicated Processors etc..
+		
+	2.Create - creates the Partition  with the Max,Min,Des memory = 256,with shared processor enabled,Partition type AIX,Linux 
+		
+	3.Modify - Modify the memory attributes Max,Min,Des memory = 512
+		
+	4.Delete - Deletes the selected LogicalPartition that are in inactive state,else will show warning
+		
+	5.PowerOn - Activates the LogicalPartition selected from the available inactive LogicalPartitions
+		
+	6.PowerOff -  Deactivates the LogicalPartition selected from the available active LogicalPartitions
+
+	7.Returns to LogicalPartition Menu - returns to Logical Partition menu
+
+	8.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+
+	9.Return to Main Menu -returns to Main Menu
+
+	10.Help - shows the Logical Partition Menu Help content
+
+	11.Exit - completely exits from the program

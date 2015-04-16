@@ -1,0 +1,20 @@
+SRIOV Logical Port Menu:
+-------------------------
+	1.List - List the details of all SRIOV Ethernet LogicalPorts in the Selected Logical Partition
+
+	2.Create - Creates SRIOVEthernet LogicalPort[The PortVLANID and PhysicalPort are hardcoded]
+
+	3.Clear Statistics - Clears the Statisctics of the selected SRIOV Ethernet Logical Port
+
+	4.Modify - Modifies the PortVLANID of the Selected SRIOVEthernetLogicalPort
+
+	5.Returns to LogicalPartition Menu - returns to Logical Partition menu
+
+	6.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+
+	7.Return to Main Menu -returns to Main Menu
+
+	8.Help - shows the SRIOVEthernetLogicalPort Help content
+
+	9.Exit - completely exits from the program
+

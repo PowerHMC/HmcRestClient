@@ -1,0 +1,7 @@
+include LICENSE
+include CONTRIBUTORS
+include *.txt
+include *.rst
+recursive-include src/help *.txt
+recursive-include src *.xml
+global-exclude *.pyc

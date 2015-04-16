@@ -1,0 +1,19 @@
+LogicalPartitionProfile :(LPAR / VIOS)
+-------------------------
+	LogicalPartitionProfile Menu :
+
+	1.List - List the details of the all profiles in the LogicalPartition such as Profile memory attributes,has Shared/Dedicated Processors etc..
+
+	2.Create - Creates the profile for the selected LogicalPartition  with the Max,Min,Des memory = 256,with shared processor enabled
+
+	3.Modify - Modify the memory attributes Max,Min,Des memory = 512
+
+	4.Returns to LogicalPartition Menu - returns to Logical Partition menu
+
+	5.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+
+	6.Return to Main Menu -returns to Main Menu
+
+	7.Help - shows the Logical Partition Profile Help content
+
+	8.Exit - completely exits from the program

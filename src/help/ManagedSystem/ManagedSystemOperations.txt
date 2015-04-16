@@ -1,0 +1,20 @@
+ManagedSystem operations :
+------------------------
+	ManagedSystem operations Menu:		
+	
+	1.List - List the details of the selected ManagedSystem such as  IP Address,ManagedSystem Name,Machine type,Model,system state
+
+	2.PowerOn - PowerOn Selected ManagedSystem
+
+	3.PowerOff - PowerOff Selected ManagedSystem
+
+	4.RemoveConnection - Remove the Selected ManagedSystem Connection
+	
+	5.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+
+	6.Return to Main Menu -returns to Main Menu
+
+	7.Help - shows the Logical Partition Menu Help content
+
+	8.Exit - Completely exits from the Program
+

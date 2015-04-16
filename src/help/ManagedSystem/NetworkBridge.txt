@@ -1,0 +1,21 @@
+Network Bridge:
+--------------
+	Network Bridge Menu:
+
+	1.List - List the details of all available Network Bridge for Selected ManagedSystem
+
+	2.Create - Create a Network Bridge [ takes Vios and virtual network as input from user, PortVLANID is hardcoded.Creates Network Bridge with one LoadGroup containing one trunk addapter]
+
+	3.Modify - shows two options for the selected Network Bridge
+
+		1. Add Additional VLANID to existing TrunkAdapter - adds an addition VLAN to the TrunkAdapter in the first LoadGroup[takes virtual network as input from user]
+
+		2. Add a New LoadGroup - add a new Load Group to the Network Bridge[takes virtual network as input from user]
+
+	4.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+	
+	5.Return to Main Menu - Returns to Main Menu
+
+	6.Help - Shows Network Bridge Help Content
+
+	7.Exit - Completely exits from the Program

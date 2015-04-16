@@ -1,0 +1,31 @@
+Cluster:
+--------
+	Cluster Menu :
+
+	1.List -  List the details of all available cluster and shared storage pool such as nodes available in the cluster,PhysicalVolumes and logical units in the shared storage pool.
+
+	2.create -  Creates a  Cluster [the VIOS Link and Hostname of vios to be added,Physical disk name for Repository disk,physical volumes to be included in to ssp, cluster name and pool name are hardcoded.]
+
+	3.Modify - shows following options,
+
+		1.Add a node to cluster - The VIOS Link and Hostname of vios to be added are hardcoded
+		
+		2.Add a PhysicalVolume to ssp- the selected physical volume will be added to the selected ssp
+		
+		3.Create LogicalUnit - the logical unit of size 1GB with Thin provisioning will be created from the selected ssp
+		
+		4.Delete LogicalUnit - the selected LogicalUnit will be removed from the selected ssp
+
+		5.LULinked clone - operation is performed on the selected two Logical units.
+
+	4.Delete - Deletes a selected Cluster.
+	
+	5.Return to MainMenu -Returns to MainMenu
+
+	6.Help - Shows clusters Help content
+
+	7.Exit - Completely exits from the Program
+
+	
+	
+		

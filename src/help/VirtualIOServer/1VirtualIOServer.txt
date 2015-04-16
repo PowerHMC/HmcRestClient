@@ -1,0 +1,19 @@
+VirtualIOServer Menu:
+----------------------
+	1.VirtualIOServer Operations - Provides List,create,Modify,Poweron and power options for selected VIOS
+
+	2.LogicalPartitionProfile - Provides List,create,Modify options for Profile in the selected vios
+
+	3.VolumeGroup - Provides List,create,Modify options for Volumegroups in the selected vios
+
+	4.create vscsi mappings - Create a Virtual scsi mapping in the selected vios.(the physical disk name is hardcoded)
+	
+	5.create Virtual FibreChannel Mappings - Create a Virtual FibreChannel mapping in the selected vios.(the physical port is hardcoded)
+
+	6.Return to ManagedSystem Menu -returns to ManagedSystem Menu
+
+	7.Return to MainMenu  -Returns to Main menu
+
+	8.Help - Shows help content of VirtualIOServer Menu
+
+	9.Exit - completely exits from the program

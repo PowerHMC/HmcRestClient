@@ -1,0 +1,15 @@
+VirtualFibreChannelAdapter :
+----------------------------
+	1.List - List the details of all Available VirtualFibreChanneladapters of selected LogicalPartition
+
+	2.Create - Creates a VirtualFibreChannelAdapter in the selected LogicalPartition[The server adapter ID and server ID are hardcoded]
+
+	3.Returns to LogicalPartition Menu - returns to Logical Partition menu
+
+	4.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+
+	5.Return to Main Menu -returns to Main Menu
+
+	6.Help - shows the VirtualFibreChannelAdapter Help content
+
+	7.Exit - completely exits from the program

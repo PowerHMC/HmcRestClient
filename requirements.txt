@@ -1,0 +1,3 @@
+requests>=2.5.3
+pyxb = 1.2.4
+feedparser>=5.1.3

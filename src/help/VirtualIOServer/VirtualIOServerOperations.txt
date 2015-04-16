@@ -1,0 +1,23 @@
+VirtualIOServer Menu :
+---------------------
+	
+	1.List - List the details of the selected Virtual IO Server
+		
+	2.Create - Create VIOS  with the Max,Min,Des memory = 256,with shared processor enabled of capped type.
+		
+	3.Modify - Modify the memory attributes Max,Min,Des memory = 512
+
+	4.PowerOn - activates the selected VIOS 
+
+	5.Poweroff - Deactivates the selected VIOS that is in not activated state
+
+	6.Return to vios Menu - returns to VirtualIOServer menu
+
+	7.Return to ManagedSystem Menu - returns to ManagedSystem
+
+	8.Return to MainMenu - returns to MainMenu
+
+	9.Help - Shows Help content of VirtualIOServer operations
+
+	10.Exit - completely exits from the Program
+	

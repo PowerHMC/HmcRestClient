@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: HmcRestClient
+Version: 1.0
+Summary: Python sample programs for accessing the Power HMC through REST APIs
+Home-page: UNKNOWN
+Author: Niraj Shah, Manjunath Shanbhag
+Author-email: niraj.shah@in.ibm.com,manjunathns@in.ibm.com
+License: Apache
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Software Development :: Data Center Automation Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.4.2
+Classifier: Environment :: Console

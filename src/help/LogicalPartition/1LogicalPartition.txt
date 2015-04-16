@@ -1,0 +1,24 @@
+
+LogicalPartition  :
+------------------ 
+	Logical Partition Menu:
+
+	1.LogicalPartition operations -  Provides List,Create,Modify,Delete,Poweron and Poweroff options for the selected Logical Partition
+	
+	2.LogicalPartitionProfile - Provides List,Create and Modify operations for selected Profiles in the selected Logical Partition
+
+	3.ClientNetworkadapter - Provides List and create of ClientNetworkadapter options in Selected Logical Partition
+
+	4.VirtualSCSIAdapter - Provides List and create of VirtualSCSIAdapter options in Selected Logical Partition
+
+	5.VirtualFibreChannelAdapter - Provides List and create of VirtualFibreChannelAdapter options in Selected Logical Partition
+
+	6.SRIOVLogical Port - provides List,Create,ClearStatistics and Modify of SRIOVEthernetLogicalPort options in selected Logical Partition
+
+	7.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+
+	8.Return to Main Menu -returns to Main Menu
+
+	9.Help - shows the Logical Partition Menu Help content
+
+	10.Exit - completely exits from the program

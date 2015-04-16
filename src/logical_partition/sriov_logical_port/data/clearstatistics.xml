@@ -1,0 +1,21 @@
+<JobRequest:JobRequest 
+xmlns:JobRequest="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/" 
+xmlns="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/" 
+xmlns:ns2="http://www.w3.org/XML/1998/namespace/k2"
+schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<RequestedOperation kxe="false" kb="CUR" schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+<OperationName kxe="false" kb="ROR">ClearStatistics</OperationName>
+<GroupName kxe="false" kb="ROR">SRIOVEthernetLogicalPort</GroupName>
+</RequestedOperation>
+<JobParameters kxe="false" kb="CUR" schemaVersion="V1_0">
+<Metadata>
+<Atom/>
+</Metadata>
+</JobParameters>
+</JobRequest:JobRequest>

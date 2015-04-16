@@ -1,0 +1,17 @@
+VirtualSwitch:
+--------------
+	VirtualSwitch Menu:
+
+	1.List - List the details of all available Virtual Switch for the selected ManagedSystem
+		
+	2.Create - Creates a Virtual Switch with the next available Switch ID[Name of the switch-->ethernet-switch]
+
+	3.Modify - Modify name of the selected Virtual Network 
+
+	4.Return to ManagedSystem Menu - returns to ManagedSystem Menu
+
+	5.Return to Main Menu - Returns to Main Menu
+
+	6.Help - Shows Virtual Switch Help  Content
+
+	7.Exit - Completely exits from the Program
