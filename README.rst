@@ -46,4 +46,6 @@ Execution:
 Reference to useful resources:
 ------------------------------
 	PowerHMC developerworks community: https://www.ibm.com/developerworks/community/groups/community/powerhmc
+	
 	Link to PowerVM Python SDK: https://github.com/pypowervm/pypowervm
+	
