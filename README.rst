@@ -1,23 +1,29 @@
 About:
 ------
-	This package has set of examples to understand how to use HMC REST APIs. For each operation it has a Python module. Target audiance are the user interested in exploiting the HMC REST APIs. The objective is to provide a starter kit for creating REST clients. The users can take the source code and modify it according to their needs.
+	This package has set of examples to understand how to use HMC REST APIs. For each operation it has a Python module. Target audiance for these examples are the users interested in exploiting the HMC REST APIs. The objective is to provide a starter kit for creating a REST client. The users can take the source code and modify it according to their needs.
 	
 Disclaimer:
 -----------
-	These examples are shared as is and they not fomrally supported by IBM or any of the authors and contributors. User assumes complete ownership and responsibility upon executing them.
+	These examples are shared as is and they are not fomrally supported by IBM or any of the authors and contributors. User assumes complete ownership and responsibility before modifying or executing them.
 	
 Installation:
 -------------	
 	"python setup.py install" - the script files will be created in {Python installation directory}/scripts
-	"python setup.py install --install-scripts={Target location}" -the script files will get created in the specified location.
+	
+	"python setup.py install --install-scripts={Target location}" -the script files will get created in the specified target location.
 
 Requirements:
 -------------
 	Power Hardware Management Console Version 8 Release 8.2
+	
 	Python Version >= 3.4.2
+	
 	Python Libraries:
+	
 		Requests version >= 2.5.3
+		
 		PyXB version = 1.2.4
+		
 		feedparser version >= 5.1.3
 
 Execution:
@@ -39,5 +45,5 @@ Execution:
 
 Reference to useful resources:
 ------------------------------
-PowerHMC developerworks community: https://www.ibm.com/developerworks/community/groups/community/powerhmc
-Link to PowerVM Python SDK: https://github.com/pypowervm/pypowervm
+	PowerHMC developerworks community: https://www.ibm.com/developerworks/community/groups/community/powerhmc
+	Link to PowerVM Python SDK: https://github.com/pypowervm/pypowervm
