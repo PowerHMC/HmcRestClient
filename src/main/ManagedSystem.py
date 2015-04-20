@@ -39,7 +39,7 @@ import os
 # MANAGED SYSTEM 
 #################
 
-
+directory = os.path.dirname(os.path.dirname(__file__))
 def managedsystem_children(choice, ip, x_api_session):
     """
     This function provides a detailed view of the Managed System
@@ -103,6 +103,8 @@ def managedsystem_children(choice, ip, x_api_session):
                 elif x == 6:
                     os.system("cls")
                     return False
+                elif x == 7:
+                    print(open(directory+"/help/ManagedSystem/ManagedSystemOperations.txt").read())
                 elif x == 8:
                     sys.exit(1)
                 else:
@@ -169,6 +171,8 @@ def managedsystem_children(choice, ip, x_api_session):
                 elif x1 == 5:
                     os.system("cls")
                     return False
+                elif x1 == 6:
+                    print(open(directory+"/help/ManagedSystem/VirtualSwitch.txt").read())
                 elif x1 == 7:
                     sys.exit(1)
                 else:
@@ -241,6 +245,8 @@ def managedsystem_children(choice, ip, x_api_session):
                 elif x1 == 5:
                     os.system("cls")
                     return False
+                elif x1 == 6:
+                    print(open(directory+"/help/ManagedSystem/VirtualNetwork.txt").read())
                 elif x1 == 7:
                     sys.exit(1)
                 else:
@@ -355,6 +361,8 @@ def managedsystem_children(choice, ip, x_api_session):
                 elif x1 == 5:
                     os.system("cls")
                     return False
+                elif x1 == 6:
+                    print(open(directory+"/help/ManagedSystem/NetworkBridge.txt").read())
                 elif x1 == 7:
                     sys.exit(1)
                 else:
@@ -387,6 +395,9 @@ def managedsystem_children(choice, ip, x_api_session):
                         return True
                     elif k == 3:
                         return False
+                elif n == 9:
+                    print(open(directory+"/help/LogicalPartition/1LogicalPartition.txt").read())
+                    back_to_menu()
                 elif n == 10 :
                     sys.exit(1)
                 else:
@@ -422,6 +433,9 @@ def managedsystem_children(choice, ip, x_api_session):
                     elif k == 3:
                         os.system("cls")
                         return False
+                elif n == 8:
+                    print(open(directory+"/help/VirtualIOServer/1VirtualIOServer.txt").read())
+                    back_to_menu()                
                 elif n == 9:
                     sys.exit(1)
                 else:
@@ -470,6 +484,8 @@ def managedsystem_children(choice, ip, x_api_session):
                elif n == 4:
                  os.system("cls")
                  return False
+               elif n == 8:
+                    print(open(directory+"/help/ManagedSystem/SRIOVPhysicalPort.txt").read())              
                elif n == 6:
                    sys.exit(1)
                else:

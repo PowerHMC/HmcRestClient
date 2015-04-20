@@ -15,8 +15,10 @@ ManagedSystem  :
 
 	6.VirtualIOServer - shows VirtualIOServer Menu to perform VIOS operations on the selected Managed system
 
-	7.SRIOV Physical Port - Provides List,Change AdapterMode for Selected Managed system
+	7.SRIOVEthernetPhysicalPort - Provides List,Change AdapterMode for Selected Managed system
 
 	8.Return to Main Menu - Returns to Main Menu
+
+	9.Help - Shows Help Content of ManagedSystem Menu
 
 	10.Exit - Completely exits from the Program

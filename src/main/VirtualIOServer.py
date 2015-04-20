@@ -38,6 +38,8 @@ import os
 # VIRTUAL IO SERVER
 ####################
 
+directory = os.path.dirname(os.path.dirname(__file__))
+
 def virtualioserver_children(n1, managedsystem_uuid, ip, x_api_session):
     """
     This function provides a detailed view of the virtualIOserver
@@ -162,6 +164,8 @@ def virtualioserver_children(n1, managedsystem_uuid, ip, x_api_session):
                 elif x == 8:
                     os.system("cls")
                     return 3
+                elif x == 9:
+                    print(open(directory+"/help/VirtualIOServer/VirtualIOServerOperations.txt").read())
                 elif x == 10:
                     sys.exit(1)
                 else:
@@ -248,6 +252,8 @@ def virtualioserver_children(n1, managedsystem_uuid, ip, x_api_session):
             elif x1 == 6:
                     os.system("cls")
                     return 3
+            elif x1 == 6:
+                print(open(directory+"/help/LogicalPartitionProfile.txt").read())
             elif x1 == 7:
                 sys.exit(1)
             else:
@@ -333,6 +339,9 @@ def virtualioserver_children(n1, managedsystem_uuid, ip, x_api_session):
             elif x1 == 6:
                     os.system("cls")
                     return 3
+            elif x1 == 7:
+                print(open(directory+"/help/VirtualIOServer/VolumeGroup.txt").read())
+                back_to_menu()
             elif x1 == 8:
                 sys.exit(1)
             else:

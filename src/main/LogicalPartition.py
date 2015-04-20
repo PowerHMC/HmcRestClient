@@ -48,6 +48,7 @@ import os
 # LOGICAL PARTITON
 ####################
 
+directory = os.path.dirname(os.path.dirname(__file__))
 def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
     """
     This function provides a detailed view of the Logical Partitions
@@ -195,6 +196,8 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
             elif x == 9:
                       os.system("cls")
                       return 3
+            elif x == 10:
+                 print(open(directory+"/help/LogicalPartition/LogicalPartitionOperations.txt").read())
             elif x == 11:
                 sys.exit(1)
             else:
@@ -289,6 +292,8 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
                  elif x1 == 6:
                       os.system("cls")
                       return 3
+                 elif x1 == 7:
+                      print(open(directory+"/help/LogicalPartitionProfile.txt").read())
                  elif x1 == 8:
                      sys.exit(1)
                  else:
@@ -346,6 +351,8 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
             elif x1 == 5:
                       os.system("cls")
                       return 3
+            elif x1 == 6:
+                 print(open(directory+"/help/LogicalPartition/ClientNetworkAdapter.txt").read())
             elif x1 == 7:
                 sys.exit(1)
             else:
@@ -404,6 +411,8 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
             elif x1 == 5:
                       os.system("cls")
                       return 3
+            elif x1 == 6:
+                 print(open(directory+"/help/LogicalPartition/VirtualSCSIAdapter.txt").read())
             elif x1 == 7:
                 sys.exit(1)
             else:
@@ -439,7 +448,7 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
                                                                          x_api_session)
                     if object_list != None:
                         print("\nDetails of Available VirtualFibreChannelClientAdapters  :",
-                              "\n--------------------------------------------------")
+                              "\n------------------------------------------------------")
                         for i in range(0,len(object_list)):
                             vfc_list_object.print_virtualfibrechannel_attributes(object_list[i])
                     else :
@@ -463,6 +472,8 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
             elif x1 == 5:
                       os.system("cls")
                       return 3
+            elif x1 == 6:
+                 print(open(directory+"/help/LogicalPartition/VirtualFibreChannelAdapter.txt").read())
             elif x1 == 7:
                 sys.exit(1)
             else:
@@ -566,6 +577,8 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
             elif x1 == 7:
                       os.system("cls")
                       return 3
+            elif x1 == 8:
+                 print(open(directory+"/help/LogicalPartition/SRIOVEthernetLogicalPort.txt").read())
             elif x1 == 9 :
                 sys.exit(1)
             else:

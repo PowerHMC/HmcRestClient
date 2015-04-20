@@ -4,6 +4,7 @@ MANIFEST.in
 README.rst
 _xmlk2.py
 requirements.txt
+setup.cfg
 setup.py
 HmcRestClient.egg-info/PKG-INFO
 HmcRestClient.egg-info/SOURCES.txt
@@ -44,7 +45,7 @@ src/help/ManagedSystem/1ManagedSystem.txt
 src/help/ManagedSystem/ManagedSystemOperations.txt
 src/help/ManagedSystem/NetworkBridge.txt
 src/help/ManagedSystem/SRIOVPhysicalPort.txt
-src/help/ManagedSystem/VirtualNertwork.txt
+src/help/ManagedSystem/VirtualNetwork.txt
 src/help/ManagedSystem/VirtualSwitch.txt
 src/help/VirtualIOServer/1VirtualIOServer.txt
 src/help/VirtualIOServer/VirtualIOServerOperations.txt

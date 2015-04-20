@@ -61,8 +61,8 @@ def menu():
                         os.system("cls")
                         break
                 elif choice == 9:
-                    """ ToDo: Working on help content"""
-                    pass #print(open(directory+"/help/ManagedSystem.txt").read())
+                    print(open(directory+"/help/ManagedSystem/1ManagedSystem.txt").read())
+                    back_to_menu()
                 elif choice == 10:
                     sys.exit(1)
                 else:

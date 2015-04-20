@@ -3,6 +3,7 @@ VirtualSCSIAdapter :
 	1.List - List the details of all Available VirtualSCSIadapters of selected LogicalPartition
 
 	2.Create - Creates a VirtualSCSIAdapter in the selected LogicalPartition[The server adapter ID and server ID are hardcoded]
+
 	3.Returns to LogicalPartition Menu - returns to Logical Partition menu
 
 	4.Return to ManagedSystem Menu - returns to ManagedSystem Menu

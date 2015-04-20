@@ -13,7 +13,7 @@ LogicalPartition  :
 
 	5.VirtualFibreChannelAdapter - Provides List and create of VirtualFibreChannelAdapter options in Selected Logical Partition
 
-	6.SRIOVLogical Port - provides List,Create,ClearStatistics and Modify of SRIOVEthernetLogicalPort options in selected Logical Partition
+	6.SRIOVEthernetLogicalPort - provides List,Create,ClearStatistics and Modify of SRIOVEthernetLogicalPort options in selected Logical Partition
 
 	7.Return to ManagedSystem Menu - returns to ManagedSystem Menu
 
