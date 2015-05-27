@@ -23,7 +23,7 @@ ROOT = "LogicalPartition"
 CONTENT_TYPE = "application/vnd.ibm.powervm.uom+xml; type=VirtualSCSIClientAdapter"
 SCHEMA_VER = "V1_3_0"
 ADAPTER_TYPE = "Client"
-PARTIITON_ID = 1
+PARTITION_ID = 1
 SLOT_NUMBER = 5
 
 class CreateVirtualSCSIClientAdapter:
@@ -48,7 +48,7 @@ class CreateVirtualSCSIClientAdapter:
         log.log_debug("creation of scsi adapter started")
         vscsi_object = UOM.VirtualSCSIClientAdapter()
         vscsi_object.AdapterType = ADAPTER_TYPE
-        vscsi_object.RemoteLogicalPartitionID = PARTITION_TYPE
+        vscsi_object.RemoteLogicalPartitionID = PARTITION_ID
         vscsi_object.RemoteSlotNumber = SLOT_NUMBER
         vscsi_object.schemaVersion = SCHEMA_VER
         pyxb.RequireValidWhenGenerating(True)
