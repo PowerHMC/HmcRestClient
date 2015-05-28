@@ -204,5 +204,7 @@ def cluster_menu(choice, ip, x_api_session):
                     cluster_id = selected_cluster.Metadata.Atom.AtomID.value()
                 delete_cluster_object.delete_cluster(ip, cluster_id, x_api_session)
             except IndexError:
-                print("Try again using valid option")            
+                print("Try again using valid option")
+        else  :
+             log_object.log_warn("No clusters are available")
     back_to_menu()

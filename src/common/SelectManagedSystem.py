@@ -39,7 +39,7 @@ class SelectManagedSystem:
                 return managedsystem_object
             else:
                 print("\nTry again using valid option")
-        except Exception as e:
+        except (TypeError,AttributeError,IndexError):
             log_object.log_warn("No ManagedSystems available ")
             
             

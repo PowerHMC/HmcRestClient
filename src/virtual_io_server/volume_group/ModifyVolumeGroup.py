@@ -20,7 +20,9 @@ import pyxb
 
 ROOT = "VirtualIOServer"
 CONTENT_TYPE = "application/vnd.ibm.powervm.uom+xml; type=VolumeGroup"
-
+LOGICALVOLUME_NAME = "lv_1"
+PHYSICALVOLUME_NAME = "hdisk7"
+SCHEMA_VERSION = "V1_3_0"
 
 def sendrequest(xml, ip, root, content_type, x_api_session, vios_uuid, volumegroup_id):
         """
@@ -55,15 +57,16 @@ class ModifyVolumeGroup:
             pyxb.RequireValidWhenGenerating(True)
             physicalvolume_object = UOM.PhysicalVolume()
 
-            physicalvolume_object.VolumeName = "hdisk7"
-            physicalvolume_object.schemaVersion="V1_3_0"
+            physicalvolume_object.VolumeName = PHYSICALVOLUME_NAME
+            physicalvolume_object.schemaVersion = SCHEMA_VERSION
             volumegroup_object.PhysicalVolumes.PhysicalVolume.append(physicalvolume_object)
             xml = volumegroup_object.toxml()
             volumegroup_id = volumegroup_object.Metadata.Atom.AtomID.value()
             response = sendrequest(xml, ip, self.root, self.content_type, x_api_session, vios_uuid, volumegroup_id)
             if response :
                     print("Physical volume added to volumegroup Successfully")
-            
+            else:
+                    print("Adding Physical volume to volumegroup failed")
     def add_virtualdisk(self, ip, vios_uuid, x_api_session, volumegroup_object):
          """
          creates a virtualdisk in VolumeGroup
@@ -75,8 +78,8 @@ class ModifyVolumeGroup:
          """
          pyxb.RequireValidWhenGenerating(True)
          virtualdisk_object = UOM.VirtualDisk()
-         virtualdisk_object.DiskName = "lv_1"
-         virtualdisk_object.schemaVersion="V1_3_0"
+         virtualdisk_object.DiskName = LOGICALVOLUME_NAME 
+         virtualdisk_object.schemaVersion = SCHEMA_VERSION
          virtualdisk_object.DiskCapacity = volumegroup_object.GroupCapacity.value()/2
          volumegroup_object.VirtualDisks.VirtualDisk.append(virtualdisk_object)
          xml = volumegroup_object.toxml()
@@ -84,4 +87,5 @@ class ModifyVolumeGroup:
          response = sendrequest(xml, ip, self.root, self.content_type, x_api_session, vios_uuid, volumegroup_id)
          if response :
             print("VirtualDisk Created in VolumeGroup Successfully")
-
+         else:
+            print("VirtualDisk Creation unsuccessfull")
