@@ -87,7 +87,7 @@ class CreateNetworkBridge:
         sea_obj.IsPrimary = SEA_IS_PRIMARY
         network_bridge_object.SharedEthernetAdapters = pyxb.BIND(sea_obj,schemaVersion = "V1_3_0")
 
-        network_bridge_object.PortVLANID = NETWOR_BRIDGE_PVLANID
+        network_bridge_object.PortVLANID = NETWORK_BRIDGE_PVLANID
         network_bridge_object.VirtualNetworks = pyxb.BIND()
         virtual_network = UOM.VirtualNetwork_Links_Type()
         virtual_network.link.append(UOM.AtomLink_Type(rel="related",href=virtual_network_link))

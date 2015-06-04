@@ -229,7 +229,7 @@ def managedsystem_children(choice, ip, x_api_session):
                      #object creation and method call to modify selected virtual network
                     modify_virtualnetwork_bool = False
                     selected_virtulanetwork = get_selectedvirtualnetwork(object_list)
-                    print("\nName of the Virtual Switch will be Modified \n")
+                    print("\nName of the Virtual Network will be Modified \n")
                     virtualnetwork_object = ModifyVirtualNetwork.ModifyVirtualNetwork()
                     modify_virtualnetwork_bool = virtualnetwork_object.modify_virtualnetwork(ip,
                                                                                              managedsystem_uuid,
@@ -287,24 +287,26 @@ def managedsystem_children(choice, ip, x_api_session):
                                        list_VirtualIOServer(ip,
                                                             managedsystem_uuid,
                                                           x_api_session)
-                    print("\nselect a VirtualIOServer on which Trunk Adapter to be created")
-                    selected_vios_object = get_selectedobject(vios_object_list)
-                    print("\nNetwork Bridge will be created with one Load Group containing one Trunk Adapter",
-                          "of selected virtual network\n")
-                    vios_id = selected_vios_object.Metadata.Atom.AtomID.value()
-                    virtualnetwork_id = selected_virtualnetwork_object.Metadata.\
-                                        Atom.AtomID.value()
-                    networkbridge_object = CreateNetworkBridge.CreateNetworkBridge()
-                    created_networkbridge = networkbridge_object.\
-                                            create_network_bridge(ip,
-                                                                  managedsystem_uuid,
-                                                                  x_api_session,
-                                                                  vios_id,
-                                                                  virtualnetwork_id)
-                    if created_networkbridge != None:
-                        print("NetworkBridge Created Successfully")
-                    else :
-                        log_object.log_error("Error in NetworkBridge Creation.Verify the attribute values")
+                    if selected_virtualnetwork_object != None:
+                        print("\nselect a VirtualIOServer on which Trunk Adapter to be created")
+                        selected_vios_object = get_selectedobject(vios_object_list)
+                        print("\nNetwork Bridge will be created with one Load Group containing one Trunk Adapter",
+                              "of selected virtual network\n")
+                        if selected_vios_object != None:
+                            vios_id = selected_vios_object.Metadata.Atom.AtomID.value()
+                            virtualnetwork_id = selected_virtualnetwork_object.Metadata.\
+                                                Atom.AtomID.value()
+                            networkbridge_object = CreateNetworkBridge.CreateNetworkBridge()
+                            created_networkbridge = networkbridge_object.\
+                                                    create_network_bridge(ip,
+                                                                          managedsystem_uuid,
+                                                                          x_api_session,
+                                                                          vios_id,
+                                                                          virtualnetwork_id)
+                            if created_networkbridge != None:
+                                print("NetworkBridge Created Successfully")
+                            else :
+                                log_object.log_error("Error in NetworkBridge Creation.Verify the attribute values")
                 elif x1 == 3:
                      #object creation and method call to modify Network bridge
                     modifybool = False
