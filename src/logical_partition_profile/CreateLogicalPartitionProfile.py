@@ -22,7 +22,7 @@ import xml.etree.ElementTree as etree
 log_object = HMCClientLogger.HMCClientLogger(__name__)
 
 CONTENT_TYPE = "application/vnd.ibm.powervm.uom+xml; type=LogicalPartitionProfile"
-PROFILE_NAME = "PROFILE-%s"%(time.strftime("%d%m%y-%X"))
+PROFILE_NAME = "PROFILE-%s"
 PROFILE_TYPE = "REG_LPAR_PROFILE_TYPE"
 SCHEMA_VER = "V1_3_0"
 MAX_MEMORY = 256
@@ -56,7 +56,7 @@ class CreateLogicalPartitionProfile:
         ns = self.headers_obj.ns
         logicalpartitionprofile_object = UOM.LogicalPartitionProfile()
         pyxb.RequireValidWhenGenerating(True)
-        logicalpartitionprofile_object.ProfileName = PROFILE_NAME
+        logicalpartitionprofile_object.ProfileName = PROFILE_NAME%(time.strftime("%d%m%y-%X"))
         logicalpartitionprofile_object.ProfileType = PROFILE_TYPE
         logicalpartitionprofile_object.schemaVersion = SCHEMA_VER
         logicalpartitionprofile_object.ProfileMemory = pyxb.BIND()

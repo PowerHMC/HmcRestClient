@@ -25,7 +25,7 @@ CONTENT_TYPE = "application/vnd.ibm.powervm.uom+xml; type=%s"
 ROOT = "ManagedSystem"
 SCHEMA_VER = "V1_3_0"
 DEDICATED_PROCESSORS = False
-PARTITION_NAME = "%s-"+time.strftime("%d%m%y-%X")+""
+PARTITION_NAME = "%s-"
 MAX_MEMORY = 256
 MIN_MEMORY = 256
 DES_MEMORY = 256
@@ -86,10 +86,10 @@ class CreatePartition:
             obj.PartitionProcessorConfiguration.SharingMode = SHARING_MODE
             if self.type == "VirtualIOServer":
                 obj.PartitionType = "Virtual IO Server"
-                partition_name = PARTITION_NAME%("VIOS")
+                partition_name = PARTITION_NAME%("VIOS")+""+time.strftime("%d%m%y-%X")
             else:
                 obj.PartitionType = "AIX/Linux"
-                partition_name = PARTITION_NAME%("LPAR")
+                partition_name = PARTITION_NAME%("LPAR")+""+time.strftime("%d%m%y-%X")
             obj.PartitionName = partition_name
             xmlobject = obj.toDOM()
             xmlobject.documentElement.setAttribute("xmlns",ns["xmlns"])
