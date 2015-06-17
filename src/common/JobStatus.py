@@ -48,7 +48,7 @@ class JobStatus(object):
                                                 self.session )
             job_status = " "
             print("Processing...")
-            while job_status != "COMPLETED_OK":
+            while job_status != "COMPLETED_OK" or job_status != "COMPLETED_WITH_WARNINGS":
                 http_job_object.HTTPGet(append=job_id)
                 if http_job_object.response_b:
                     root = etree.fromstring(http_job_object.response.content)
