@@ -26,7 +26,7 @@ log = HMCClientLogger.HMCClientLogger(__name__)
 ROOT = "Cluster"
 CONTENT_TYPE = "application/vnd.ibm.powervm.web+xml; type=JobRequest"
 SCHEMA_VER = "V1_3_0"
-CLUSTER_NAME = "Cluster-%s"%(time.strftime("%d%m%y-%X"))
+CLUSTER_NAME = "Cluster-%s"
 PHYSICAL_VOLUME_REPODISK = "hdisk4"
 HOST_NAME = "falcon8vios1.blr.stglabs.ibm.com"
 PHYSICAL_VOLUME_SSP1 = "hdisk5"
@@ -62,7 +62,7 @@ class CreateCluster(JobStatus):
         link = "https://"+ip+":12443/rest/api/uom/VirtualIOServer/"+vios_id
         log.log_debug("Link of vios to be added to cluster %s"%(link))
         cluster_object = UOM.Cluster()
-        cluster_object.ClusterName = CLUSTER_NAME
+        cluster_object.ClusterName = CLUSTER_NAME%(time.strftime("%d%m%y-%X"))
         cluster_object.schemaVersion=SCHEMA_VER
 
         physicalvolume_object = UOM.PhysicalVolume()
