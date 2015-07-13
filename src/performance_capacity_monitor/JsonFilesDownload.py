@@ -32,10 +32,11 @@ def json_file(filename, file_content):
     location=directory+"/output/json-files"
     if not os.path.exists("output/json-files"):
              os.makedirs("output/json-files")
-    file_object = open(directory+"\output\json-files\ " + json_filename,'w')
+    full_json_filename = location + "/" + json_filename 
+    file_object = open(full_json_filename,'w')
     file_object.write(json_file_content)
     file_object.close()
-    print("JSON file Downloaded at %s"%(location))
+    print("JSON file Downloaded at %s" %(full_json_filename))
     
    
 
