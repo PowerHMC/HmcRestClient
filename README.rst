@@ -21,10 +21,23 @@ Requirements:
 	Python Libraries:
 	
 		Requests version >= 2.5.3
+		https://pypi.python.org/pypi/requests
+		Used for processing HTTP requests and responses from the HMC.
 		
 		PyXB version = 1.2.4
+		https://pypi.python.org/pypi/PyXB/
+		Used for parsing HMC XSDs and generating corresponding Python source code. The generated source code is used for processing UOM and PCM objects. If you upgrade HMC and if there is new schema version from HMC you may need to regenerate the source code to make it compatible with new version.
+		Command to generate source code for UOM objects:
+		python pyxbgen -u [UOM.xsd] -m [Output python file name e.g. UOM] --location-prefix-rewrite=platform:/resource/PMC.SCHEMA.UOM/tmp/build/schema=[Location of HMC schema]
+		Command to generate source code for PCM objects:
+		python pyxbgen -u [ManagedSystemPcmPreference.xsd] -m [Output python file name e.g. ManagedSystemPcmPreferences]
 		
 		feedparser version >= 5.1.3
+		https://pypi.python.org/pypi/feedparser
+		Used for processing Atom feed from the HMC.
+		
+		The program uses OS specific APIs to read user input from the command line. To execute the program on Linux install getch module.
+		https://pypi.python.org/pypi/getch
 
 Execution:
 ----------
